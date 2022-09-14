@@ -8,7 +8,7 @@ describe('SignUp Controller', () => {
       body: {
         email: 'any_email@email.com',
         password: 'any_pass',
-        padsswordConfirmation: 'any_pass'
+        passwordConfirmation: 'any_pass'
       }
     }
     const httpResponse = sut.handle(httpRequest)
@@ -22,7 +22,7 @@ describe('SignUp Controller', () => {
       body: {
         name: 'any_name',
         password: 'any_pass',
-        padsswordConfirmation: 'any_pass'
+        passwordConfirmation: 'any_pass'
       }
     }
     const httpResponse = sut.handle(httpRequest)
@@ -36,7 +36,7 @@ describe('SignUp Controller', () => {
       body: {
         email: 'any_email@email.com',
         name: 'any_name',
-        padsswordConfirmation: 'any_pass'
+        passwordConfirmation: 'any_pass'
       }
     }
     const httpResponse = sut.handle(httpRequest)
@@ -49,7 +49,8 @@ describe('SignUp Controller', () => {
     const httpRequest = {
       body: {
         email: 'any_email@email.com',
-        name: 'any_name'
+        name: 'any_name',
+        password: 'any_pass'
       }
     }
     const httpResponse = sut.handle(httpRequest)
